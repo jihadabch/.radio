@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music-Player</title>
+	<link rel="icon" href="https://image.winudf.com/v2/image1/Y29tLm11c2ljLnBsYXllci5zaW1wbGVfaWNvbl8xNjA4MTA3Mzk0XzA4NQ/icon.png?w=&fakeurl=1">
+	
+	<style>
+		
+	#player{
+		width: 360px;
+		
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		border-radius: 50% 20% 30% 90%;
+		background-color: rgba(250, 1, 1, 0.493);
+	}
+	#pic{
+		width: 50%;
+		border-radius: 50%;
+		height: 140px;
+		margin-top: 20px;
+		
+	}
+	header{
+		text-align: center;
+		color: aliceblue;
+		height: 300px;
+	}	
+	header h2{
+		margin: 20px 0;
+		font-style: oblique;
+		color: rgb(14, 1, 1);
+	}
+	#content{
+		
+		border-radius: 110% 10% 80% 30%;
+		background-color: rgba(248, 1, 1, 0.452);
+	}	
+	header h2{
+		font-size: 22px;
+	}	
+	#buttons{
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+		
+	}	
+	#buttons img{
+		width: 25px;
+		height: 25px;
+		margin: 20px;
+		border-radius: 50%;
+		cursor:pointer;	
+		border: 2px solid red;
+	}
+	#buttons img:hover{
+		background-color: rgb(248, 244, 244);
+		
+	}
+	#vol{
+		text-align: center;
+	}
+	#vol input{
+		width: 70%;
+	}
+	input[type="range" i] {
+		-webkit-appearance:none ;
+		height: 4px;
+		margin: 0%;
+		background-color: rgb(236, 195, 195);
+		border-radius: 40%;
+	}
+	input[type=range]::-webkit-slider-thumb{
+		-webkit-appearance:none ;
+		background: rgb(8, 3, 2);
+		height: 15px;
+		width: 15px;
+		border-radius:6px 17px 17px 6px ;
+	}
+	h2{
+		margin: 15px 0px;
+	}
+	#titleradio{
+		font-size: 30px;
+	}
+	#color{
+		text-align: center;
+		margin-top: 20px;
+	}
+	#color button{
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+	}
+	#color1{
+		background: linear-gradient(to right, rgb(245, 166, 20), rgb(24, 23, 23));
+	}
+	#color2{
+		background:linear-gradient(to right, rgb(20, 73, 245), rgb(218, 82, 82));
+	}
+	#color3{
+		background:linear-gradient(to right, rgb(206, 240, 58), rgb(74, 221, 118));
+	}
+	#color4{
+		background:linear-gradient(to right, rgb(8, 250, 0), rgb(8, 8, 8));
+	}
+	article h4{
+		text-align: center;
+		margin-top: 10%;
+		font-style: italic;
+		color:
+	}	
+	
+	
+	
+	
+	
+	</style>
+</head>
+<body>
+	
+	<main id="player">
+		<header>
+			<img id="pic" src="3dpic.png" alt="">
+			<h2> ) ! )-/ (-\ |) Live Radio</h2>
+			<p id="titleradio">Radio 1</p>
+		</header>
+		<div id="content">
+			<article id="buttons">
+				<img id="back" src="back.png" />
+				<img id="play_pause_button" src="play.png" />
+				<img id="next" src="prev.png" />
+				<audio  id="audiofile" src="Kalimba.mp3"></audio>
+			</article>
+			
+			<article id="vol">
+				<h2>Volume</h2>
+				<input id="volume" type="range">
+				<h2>Sound Speed</h2>
+				<input id="speed" type="range" max="200" min="0" >
+			</article>
+			<article id="color">
+				<button id="color1"></button>
+				<button id="color2"></button>
+				<button id="color3"></button>
+				<button id="color4"></button>
+			</article>
+			<article id="text_title">
+				<h4>Live Radio Created By</h4>
+				<h4> ) ! )-/ (-\ |) .com</h4>
+			</article>
+			
+		</div>
+		
+	</main>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="music.js"></script>
+	<script src="volume.js"></script>
+	<script src="color.js"></script>
+</body>
+</html>
